@@ -16,7 +16,7 @@
     left: auto;
     width: 95%; /* Adjust width of the image */
     height: 95%; /* Adjust height of the image */
-    background: url('../images/Wave.jpg') no-repeat center/cover;
+    background: url('recluvia/images/Wave.jpg') no-repeat center/cover;
     background-size: contain;
     opacity: 0.65; /* Makes the image blend with text */
     z-index: -1; /* Keeps it behind the text */
