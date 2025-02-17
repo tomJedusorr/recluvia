@@ -1,0 +1,56 @@
+.subscribe-section {
+    text-align: center;
+    padding: 60px 10%;
+    background: #f4f4f4;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between input and button */
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.subscribe-form input {
+    flex: 1; /* Makes input expand to take available space */
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 2px solid #0056b3;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.subscribe-form input:focus {
+    border-color: #0056b3;
+}
+
+.subscribe-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.subscribe-btn:hover {
+    background-color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .subscribe-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+}

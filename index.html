@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recluvia</title>
+    <link rel="stylesheet" href="/Users/raphaeldahomay/Desktop/recluvia/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/55f3eb1bba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Recluvia New Logo.png" alt="Recluvia Logo">
+            </a>
+        <ul class="nav-links">
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#insights">insights</a></li>
+            <li><a href="#knowledge">knowledge</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#subscribe">Become a Member</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-image"></div>
+        <h1>Invest Intelligently. Grow Exponentially.</h1>
+        <p>Get daily insights, exclusive advice, and market updates.</p>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="aboutus" class="section">
+        <h2>A Sharp Team</h2>
+        <div class="about-container">
+            <div class="pic-presenting">
+                <img src="images/Deer.jpg" alt="Deer in Snow">
+            </div>
+            <div class="about-text">
+                <p>Success in finance demands knowledge, resilience, and precision. 
+                    We decode complexity like a strategist solving a puzzle, turning raw data into clear, actionable insights. 
+                    Unshaken by market noise, we value discipline over impulse, consistency over chance. 
+                    Every decision is calculated, every move deliberate—because true strength lies in mastering the game, 
+                    not reacting to it. <br> <br> Our primary focus is on equity markets, employing a strategy rooted in diversification, value investing, and disciplined long-term commitment. 
+                    We remain steadfast in our approach, avoiding short-term emotional biases, and consistently adhering to our investment principles to achieve sustainable growth.</p>
+            </div>
+        </div>
+        <div class="about-button">
+            <a href="#">Learn more</a>
+        </div>
+    </section>
+
+
+    <!-- Holdings Section -->
+    <section id="insights" class="insights-section">
+        <h2>Key Insights</h2>
+        <div class="insights-container">
+            <div class="insight">
+                <span class="number" data-value="250">100+</span>
+                <p>Successful Investments</p>
+            </div>
+            <div class="insight">
+                <span class="number" data-value="98">30.5%</span>
+                <p>Realized return in 2024</p>
+            </div>
+            <div class="insight">
+                <span class="number" data-value="500M">$10K+</span>
+                <p>Capital Managed</p>
+            </div>
+            <div class="insight">
+                <span class="number" data-value="10">2+</span>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Advice Section -->
+    <section id="knowledge" class="quote-section">
+        <h2>Daily Advice</h2>
+        <blockquote class="quote">
+            <p id="quote-text"></p>
+            <span id="quote-author"></span>
+        </blockquote>
+        <h2>Today's Question</h2>
+        <div class="question-container">
+            <p>"What is the average return of the S&P 500 over the last 50 years?"</p>
+            <button class="answer-btn">
+                <a href="#">Submit Your Answer</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="articles" class="articles-section">
+        <h2>Latest Articles</h2>
+    
+        <div class="articles-container">
+            <button class="arrow left" id="prev">&#10094;</button> <!-- Left Arrow -->
+            
+            <div class="articles-slider">
+                <div class="article">
+                    <img src="images/Green Leaf Close Up.jpg" alt="Article 1">
+                    <h3>Understanding Market Trends</h3>
+                    <p>A deep dive into market analysis and forecasting.</p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div class="article">
+                    <img src="images/article2.jpg" alt="Article 2">
+                    <h3>Investment Strategies for 2024</h3>
+                    <p>Discover the best financial strategies to grow your portfolio.</p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div class="article">
+                    <img src="images/article3.jpg" alt="Article 3">
+                    <h3>The Power of Data-Driven Decisions</h3>
+                    <p>How data analytics is shaping the future of investing.</p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div class="article">
+                    <img src="images/article4.jpg" alt="Article 4">
+                    <h3>Risk Management in Trading</h3>
+                    <p>How to minimize risks and maximize returns.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+    
+            <button class="arrow right" id="next">&#10095;</button> <!-- Right Arrow -->
+        </div>
+    </section>
+
+    <!-- Subscription Form -->
+    <section id="subscribe" class="subscribe-section">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to receive exclusive insights and financial updates.</p>
+        
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left: Logo -->
+            <div class="footer-logo">
+                <img src="images/Logo_Reversed.png" alt="Your Logo">
+            </div>
+    
+            <!-- Center: Navigation Links -->
+            <div class="footer-links">
+                <a href="#">Our Teams</a>
+                <a href="#">What We Do</a>
+                <a href="#">Careers</a>
+                <a href="#">News & Insights</a>
+            </div>
+    
+            <!-- Right: Social Media -->
+            <div class="footer-social">
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i> 
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Bottom: Privacy & Copyright -->
+        <div class="footer-bottom">
+            <div class="footer-policy">
+                <a href="#">Privacy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Notices</a>
+                <a href="#">Disclosures</a>
+            </div>
+            <p>© 2025 Recluvia. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="/Users/raphaeldahomay/Desktop/recluvia/script.js"></script>
+</body>
+</html>
+

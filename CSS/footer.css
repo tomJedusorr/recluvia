@@ -1,0 +1,105 @@
+/* Footer Styling */
+.footer {
+    background-color: #0a2a5e; /* Dark blue background */
+    color: white;
+    padding: 50px 10%;
+    font-size: 0.9rem;
+}
+
+.footer-social i {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Logo */
+.footer-logo img {
+    width: 150px; /* Adjust logo size */
+}
+
+/* Links Styling */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #a9c8ff; /* Lighter blue on hover */
+}
+
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a img {
+    width: 30px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer-social a img:hover {
+    opacity: 0.7;
+}
+
+/* Footer Bottom (Privacy & Copyright) */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Policy Links */
+.footer-policy {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-policy a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-policy a:hover {
+    color: #a9c8ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

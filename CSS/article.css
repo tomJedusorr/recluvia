@@ -1,0 +1,135 @@
+.articles-section {
+    text-align: center;
+    padding: 60px 10%;
+    background: #f8f9fa;
+    overflow: hidden;
+    height: 900px;
+}
+
+.articles-section h2 {
+    color: #002252;
+}
+
+.articles-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    margin-top: 70px;
+}
+
+.articles-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px;
+    align-items: stretch;
+}
+
+.article {
+    background: white;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks */
+    justify-content: space-between;
+    height: 100%; /* Ensures the card maintains its height */
+    overflow: hidden;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Ensures long words break properly */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if text is too long */
+    white-space: nowrap;
+    color: #002252;
+}
+
+.article p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+    word-wrap: break-word; /* Ensures words don't overflow */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." for long text */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.article a {
+    color: #01419b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+/* Arrows */
+.arrow {
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    color: white;
+    font-size: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Soft border */
+    padding: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover Effect */
+.arrow:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(-50%) scale(1.1); /* Slight zoom on hover */
+}
+
+/* Left & Right Arrow Positioning */
+.left {
+    left: 0px;
+}
+
+.right {
+    right: 0px;
+}
+/* Hide scrollbar */
+.articles-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .articles-slider {
+        overflow-x: scroll;
+    }
+
+    .arrow {
+        display: none;
+    }
+}

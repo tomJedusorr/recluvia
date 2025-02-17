@@ -1,0 +1,132 @@
+#aboutus {
+    padding: 150px 5%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+#aboutus h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    align-items: center;
+    color: #002252;
+    padding: 25px 0px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between image and text */
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+/* Image Styling */
+.pic-presenting img {
+    width: 100%; /* Reduce size */
+    max-width: 300px; /* Ensure it doesn’t get too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    display: flex;
+}
+
+/* Text Styling */
+.about-text {
+    width: 65%;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: larger;
+}
+
+
+.about-button {
+    display: inline-flex;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #002252;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    margin-right: 140px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left: 165px;
+}
+
+.about-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-button:hover {
+    background: #0f57bb;
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pic-presenting {
+        align-items: center;
+        padding: 10% 0%;
+    }
+
+    .pic-presenting img {
+        width: 80%; /* Smaller on mobile */
+        max-width: 200px;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-button {
+        text-align: center;
+        align-items: center;
+        padding: 5% 1,5%;
+        margin-left: 35%;
+    }
+}
+
+@media (min-width: 1270px) {
+    #aboutus {
+        padding: 15% 0%;
+        margin: auto;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .pic-presenting {
+        margin-left: 0%;
+    }
+
+    .pic-presenting img {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        margin: auto; /* Center the image */
+        display: block; /* Fix inline spacing */
+    }
+}
+
